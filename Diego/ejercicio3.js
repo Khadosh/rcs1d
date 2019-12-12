@@ -1,10 +1,11 @@
-let cadenas = [];
-let i = 0; 
-let cadena = prompt("ingrese cadena");
-while (cadena != null) {
-    cadenas[i] = cadena+"-";
-    i++;
-    cadena = prompt("ingrese cadena");
+let cadenas = "";
+ let palabra = "";
+
+while (palabra != null) {
+     palabra = prompt("ingrese cadena");
+    cadenas = cadenas + palabra +"-";
+    
+   
 }
 
 alert(cadenas);
