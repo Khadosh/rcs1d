@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let personas= ['Victoria' , 'Nicole' , 'Guada'];
+         const ajena = 'maria';
+    /*function mostrarPersona (nombrePersona){
+        console.log(nombrePersona)
+        console.log('Fin');
+    }*/
+   
+
+   /* personas.forEach(function(persona){
+        mostrarPersona(persona);
+    })   */ 
+    /*personas.forEach(function(a){ //callback funcion que se ejecuta luego(cada vez que pasa elemtno x elemento)
+     console.log(a)
+    });*/
+   /* personas.forEach(function(elemento, index){
+        console.log(elemento);
+        console.log(index);
+    })*/
+    personas.forEach(function(elemento, index){
+        console.log(elemento);
+        if (index== 0) console.log('capitan');
+    }) 
+
+    /*const callback = function(elemento, index){
+        console.log(elemento);
+        if (index== 0) {
+            console.log('capitan');
+    }
+    }
+    personas.forEach(callback);*/
+
+    </script>
+</body>
+</html>

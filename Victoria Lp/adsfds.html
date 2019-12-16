@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let personas= ['Victoria' , 'Nicole' , 'Guada'];
+   // personas.splice(0 ,0 , 'Rochy'); /*agrega al principio*/
+   //personas.splice(1, 1, 'viki');  /*reemplaza*/
+   // personas.splice (personas.length - 1 ,1) /*borra el ultimo*/
+    personas.splice(personas.length - 1, 0, 'Maria');
+    function mostrarPersona (nombre){
+        console.log(nombre)
+    }
+    for (let i = 0 ; i < personas.length; i++){
+mostrarPersona(personas[i]);
+}    
+    
+    
+    </script>
+</body>
+</html>
