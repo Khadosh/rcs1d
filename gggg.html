@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div>
+        <input id="inputIngresar"/>
+        <button id="botonAgregar">Agregar</button>
+        <br />
+        <button id="ordenarAlf">Ordenar Alfabeticamente</button>
+        <div>
+          <ul id="lista"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    let nombres = [];
+
+    const inputIngresar = document.querySelector("#inputIngresar");
+    const botonAgregar = document.querySelector("#botonAgregar");
+    const ordenarAlf = document.querySelector("#ordenarAlf");
+    const lista = document.querySelector("#lista");
+
+    botonAgregar.addEventListener("click", function() {
+      nombres.push(inputIngresar.value);
+     listar();
+    });
+    /*  nombres.forEach(function(item) {
+        listaPersona += "<li>" + item + "</li>";
+        lista.innerHTML = listaPersona;
+        inputIngresar.value = "";
+      });
+    });*/
+
+    ordenarAlf.addEventListener("click", function() {
+      nombres = nombres.sort();
+      listar();
+     /* let listaPersona = "";
+      nombres.forEach(function(item) {
+        listaPersona += "<li>" + item + "</li>";
+        lista.innerHTML = listaPersona;
+      });*/
+    });
+    function listar(){
+        let listaPersona = "";
+      nombres.forEach(function(item) {
+        listaPersona += "<li>" + item + "</li>";
+        lista.innerHTML = listaPersona;
+      })
+    }
+  </script>
+</html>
