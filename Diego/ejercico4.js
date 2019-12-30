@@ -17,11 +17,12 @@ do {
 let total = 0;
 let numero = 0;
 while (numero !== null) {
-    numero = parseInt(prompt("Ingrese un numero"));
+    numero = prompt("Ingrese un numero");
+
     console.log("numero")
 
    if(numero !== null){
-       total = total + numero;
+      total = total + parseInt(numero);
    }
 }
 alert(total);
