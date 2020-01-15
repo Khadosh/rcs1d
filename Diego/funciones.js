@@ -98,7 +98,7 @@ console.log(suma3);*/
 //crear una funcion que devuelva un Array, sumando los dos arrays y cada valor los arrays anidados.
 
 //funcion ---> nombre de la funcion, los parametros que recibe.
-const array1 = [[1, 2], [1, 2, 3], [1, 2, 3, 4]];
+/*const array1 = [[1, 2], [1, 2, 3], [1, 2, 3, 4]];
 const array2 = [[1, 2], [1, 2, 3], [1, 2, 3, 4]];
 //resultado [9,9,25]
 
@@ -121,5 +121,7 @@ function sumaArray(array1, array2) {
 }
 
 var suma = sumaArray(array1, array2);
-console.log(suma)
+console.log(suma)*/
+
+
 
