@@ -1,4 +1,4 @@
-function sumaArray(array1, array2) {
+/*function sumaArray(array1, array2) {
     let resultado = [];
 
     for (let i = 0; i < array1.length; i++) {
@@ -30,4 +30,12 @@ let array2 = [
 ]
 
 let suma = sumaArray(array1, array2)
-console.log(suma)
+console.log(suma)*/
+
+let materias = ['fisica', 'quimica', 'matematica']
+let alumnos = ['pedro', 'pepito', 'joe mama']
+let notas = [
+    [9, 3, 6],
+    [6, 3, 9],
+    [3, 9, 6]
+]
