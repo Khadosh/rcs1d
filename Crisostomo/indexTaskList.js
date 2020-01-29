@@ -1,10 +1,9 @@
 let tasks = [];
 
 function btnAddFunction() {
-    var text = document.querySelector("#inputTask").value;
-    var list = '<li>' + text + '</li>';
-    var node = document.createElement()
-    document.querySelector("#mainList").appendChild(node);
+    let text = document.querySelector("#inputTask").value;
+    let list = '<td>' + text + '</td>';
+    document.querySelector("#firstList").innerHTML = list;
 }
 
 function moveTaskInProgress() {

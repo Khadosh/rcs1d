@@ -11,16 +11,43 @@
 </head>
 
 <body>
-    <h2>Tasks</h2>
-    <input placeholder="Type in a task" id="inputTask" type="text">
-    <button class="btn btn-success" onclick="btnAddFunction()">+</button>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>
+                        Tasks
+                        <div>
+                            <input placeholder="Type in a task" id="inputTask" type="text">
+                            <button class="btn btn-success" onclick="btnAddFunction()">+</button>
+                        </div>
+                    </th>
+                    <th scope="col" class="taskInProgressDone">
+                        <h4>Tasks in progress</h4>
+                    </th>
+                    <th scope="col" class="taskInProgressDone">
+                        <h4>Tasks completed</h4>
+                    </th>
+                    <!-- <input placeholder="Type in a task" id="inputTask" type="text">
+            <button class="btn btn-success" onclick="btnAddFunction()">+</button>
 
-    <ul id="mainList"></ul>
-    <button class="btn btn-primary" id="rightArrow">-></button>
+            <ul id="mainList"></ul> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="firstList"></tr>
+            </tbody>
 
-    <h2>Tasks in progress</h2>
+            <div class="col-sm">
+                <!-- <button class="btn btn-primary" id="rightArrow" onclick="moveTaskInProgress()">-></button> -->
+            </div>
 
-    <h2>Tasks completed</h2>
+
+            <div class="col-sm">
+            </div>
+        </table>
+    </div>
+
 
     <script src="indexTaskList.js"></script>
 </body>
