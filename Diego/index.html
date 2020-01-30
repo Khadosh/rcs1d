@@ -5,24 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--<script src="main.js" type="text/javascript"></script>-->
-    <!--<script src="ejercicio2.js" type="text/javascript"></script>-->
-    <!--<script src="ejercicio3.js" type="text/javascript"></script>-->
-    <!--<script src="ejercico4.js" type="text/javascript"></script>-->
-    <!-- <script src="funciones.js" type="text/javascript"></script> -->
-    <!--<script src="ejercicio5.js" type="text/javascript"></script>-->
-    <!--<script src="ejercicio6.js" type="text/javascript"></script>-->
-    <!--script src="ejercicio7.js" type="text/javascript"></script>-->
-    <!-- <script src="ejercicio8.js" type="text/javascript"></script> -->
-    <!--script src="ejercicio9.js" type="text/javascript"></script-->
-    <!-- <script src="ejercicio11.js" type="text/javascript"></script> -->
-    <!--<script src="ejercicio12.js" type="text/javascript"></script>-->
-    <!--<script src="reloj.js" type="text/javascript"></script>-->
-    <!--<script src="array.js" type="text/javascript"></script>-->
-    <!-- <script src="Ejercicio13.js" type="text/javascript"></script> -->
-    <script src="Ejercicio14.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
     <title>Ejercicios JS</title>
-</head>
+  </head>
 
 <body>
     
@@ -39,7 +25,7 @@
             console.log("el resultado es mayor " + resultado);
         } else {
             console.log("el resultado es menor" + resultado);
-        }/*
+          }/*
         
     </script>
    <script>
@@ -50,14 +36,14 @@
         if (edad < 0 || edad > 90) {
             console.log("Numero no valido");
         } else {
-            console.log("numero valido")
+          console.log("numero valido")
         }
 
         
         if (edad > 18 && edad < 90) {
             console.log("Ya puede conducir");   
         }
-    /*
+        /*
     </script> -->
     <!--<script> 
     
@@ -83,7 +69,7 @@
         const peso = prompt(nombre + ", ingrese su peso");
         const altura = prompt(nombre + ", ingrese su altura");
         const imc =  peso / (altura * altura);
-
+        
         alert(nombre + ", si imc es: " + imc);
 
         if (imc > 25) {
@@ -96,7 +82,7 @@
         
         </script>-->
        <!-- <script>
-        let edad1 = prompt("ingrese su edad");
+         let edad1 = prompt("ingrese su edad");
         edad1 = parseInt (edad1)
         let edad2 = prompt("ingrese su edad");
         edad2 = parseInt (edad2)
@@ -111,7 +97,7 @@
 
        alert(promedio);   
         
-        
+       
         </script>-->
         <!--<script> 
         let edades =[];
@@ -134,7 +120,7 @@
 var tele = {
     color:"Gris",
     Conectividad: {
-        tipo1:"bluetooth", 
+      tipo1:"bluetooth", 
         tipo2:"usb", 
         tipo3:"hdmi",
     },
@@ -143,23 +129,155 @@ var tele = {
 
     }
 
-</script>-->
+  </script>-->
 <!--<script>
 function saludar(a,b,c){
     alert(c);
-}
+  }
 
 </script>-->
 <!--<script>
 function sumar(num1, num2){
-    let resultado = num1 + num2;
+  let resultado = num1 + num2;
     mostrarResultado
     alert(num1 + num2);
-}
+  }
 
 </script>-->
 
+<!-- <button id="comenzar" class="btn btn-primary" onclick="comenzarJuego()"> Comenzar</button><br />
+<input type="text" id="Numero" placeholder="Ingrese un numero">Ingrese un numero</input> <button class="btn btn-primary" type="text" id="Adivinar" onclick="adivinar()">Adivinar</button>
+<div class="alert alert-primary" role="alert" id="resultado">
+  
+  </div> -->
 
+  <!-- GENERACIONES -->
+ <h4>Ingrese sus datos.</h4>
+<form onsubmit="mostrarDatos()">
+  <div class="form-group row">
+      <label for="" class="col-sm-2 col-form-label">Nombre</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="nombre">
+      </div>
+    </div>
+    <div class="form-group row">
+        <label for="" class="col-sm-2 col-form-label">Edad</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="edad">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="" class="col-sm-2 col-form-label">DNI</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="DNI">
+        </div>
+      </div>
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-sm-2 pt-0">Sexo</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="hobre" value="option1" checked>
+              <label class="form-check-label" for="gridRadios1">
+                Hombre
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="mujer" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+                Mujer
+              </label>
+            </div>
+            
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-group row">
+        <label for="" class="col-sm-2 col-form-label">Peso</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="peso">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="" class="col-sm-2 col-form-label">Altura</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="altura">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="" class="col-sm-2 col-form-label">Año de Nacimiento</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="anioDeNacimiento">
+        </div>
+      </div>
+    
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary">Generacion</button>
+      </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary">Es Mayor de edad</button>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary" id="enviar">Enviar Formulario</button>
+        </div>
+      </div>
+  </form> 
+
+  <!-- <form id="formTarea" action="">
+  <input type="text" name="tarea" placeholder="Ingrese Tarea"></input>
+  <button id="mostrar" class="btn btn-primary">Agregar</button>
+  </form>
+  
+  <div id="ListaDeTareas">
+      <h4>Lista de Tareas</h4>
+      <ul id="Lista">
+        
+      </ul>
+      
+      
+    </div>
+     -->
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+    
+
+
+    
+
+
+    <!--<script src="main.js" type="text/javascript"></script>-->
+    <!--<script src="ejercicio2.js" type="text/javascript"></script>-->
+    <!--<script src="ejercicio3.js" type="text/javascript"></script>-->
+    <!--<script src="ejercico4.js" type="text/javascript"></script>-->
+    <!-- <script src="funciones.js" type="text/javascript"></script> -->
+    <!--<script src="ejercicio5.js" type="text/javascript"></script>-->
+    <!--<script src="ejercicio6.js" type="text/javascript"></script>-->
+    <!--script src="ejercicio7.js" type="text/javascript"></script>-->
+    <!-- <script src="ejercicio8.js" type="text/javascript"></script> -->
+    <!--script src="ejercicio9.js" type="text/javascript"></script-->
+    <!-- <script src="ejercicio11.js" type="text/javascript"></script> -->
+    <!--<script src="ejercicio12.js" type="text/javascript"></script>-->
+    <!--<script src="reloj.js" type="text/javascript"></script>-->
+    <!-- <script src="array.js" type="text/javascript"></script> -->
+    <!-- <script src="Ejercicio13.js" type="text/javascript"></script> -->
+    <!-- <script src="Ejercicio14.js" type="text/javascript"></script> -->
+    <!-- <script src="Ejercicio15.js" type="text/javascript"></script> -->
+    <!-- <script src="Objetos.js" type="text/javascript"></script>   -->
+    <script src="dom.js" type="text/javascript"></script>
 </body>
 
 </html>

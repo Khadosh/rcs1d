@@ -2,7 +2,7 @@ let numero = prompt("numero 0-10");
 numero = parseInt (numero);
 if (numero <= 2 && numero >=0){
     alert("Muy deficiente");
-} else {
+} else  {
     if (numero <=4 && numero >=3){
         alert("Insuficiente");
     } else {
