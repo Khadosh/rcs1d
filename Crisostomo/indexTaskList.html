@@ -19,13 +19,13 @@
                         Tasks
                         <div>
                             <input placeholder="Type in a task" id="inputTask" type="text">
-                            <button class="btn btn-success" onclick="btnAddFunction()">+</button>
+                            <button class="btn btn-success" onclick="addTask()">+</button>
                         </div>
                     </th>
-                    <th scope="col" class="taskInProgressDone">
+                    <th scope="col">
                         <h4>Tasks in progress</h4>
                     </th>
-                    <th scope="col" class="taskInProgressDone">
+                    <th scope="col">
                         <h4>Tasks completed</h4>
                     </th>
                     <!-- <input placeholder="Type in a task" id="inputTask" type="text">
@@ -35,16 +35,19 @@
                 </tr>
             </thead>
             <tbody>
-                <tr id="firstList"></tr>
+                <tr id="firstList">
+
+                </tr>
+
+                <tr id="secondList">
+
+                </tr>
+
+                <tr id="thirdList">
+
+                </tr>
+
             </tbody>
-
-            <div class="col-sm">
-                <!-- <button class="btn btn-primary" id="rightArrow" onclick="moveTaskInProgress()">-></button> -->
-            </div>
-
-
-            <div class="col-sm">
-            </div>
         </table>
     </div>
 
