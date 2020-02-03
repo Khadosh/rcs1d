@@ -1,15 +1,24 @@
-let tasks = [];
-
-function btnAddFunction() {
-    let text = document.querySelector("#inputTask").value;
-    let list = '<td>' + text + '</td>';
-    document.querySelector("#firstList").innerHTML = list;
+let tareas = ['Tarea1', 'tarea2'];
+let ulTareas = document.getElementById('tareas');
+let listarTareas = () => {
+    ulTareas.innerHTML = '';
+    tareas.forEach(function(item, index) {
+        console.log(item);
+        ulTareas.innerHTML += `<li>${item}<button onclick="pasarProceso(${index})">Pasar a Proceso</button></li>`;
+    })
 }
-
-function moveTaskInProgress() {
+let process = [];
+let pasarProceso = (i) => {
+    process.push(tareas[i]);
+    tareas.splice(i, 1);
+    listarTareas();
 
 }
+listarTareas();
 
-function moveTaskCompleted() {
-
+function btnAddTask() {
+    let inputText = document.getElementById('taskInput').value;
+    tareas.push(inputText);
+    document.getElementById('taskInput').value = '';
+    listarTareas()
 }
