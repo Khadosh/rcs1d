@@ -1,7 +1,7 @@
 let tasks = [];
+let td3Tasks = document.querySelector('#thirdList');
 let td2Tasks = document.querySelector('#secondList');
 let tdTasks = document.querySelector('#firstList');
-let td3Tasks = document.querySelector('#thirdList');
 
 let addTask = () => {
     let inputTextTask = document.querySelector('#inputTask').value;
@@ -13,8 +13,8 @@ let addTask = () => {
 let listTasks = () => {
     tdTasks.innerHTML = '';
     tasks.forEach(function(item, index) {
-        console.log(item);
-        tdTasks.innerHTML += `<td>${item}<button class="btn btn-primary" onclick="moveTaskToProgress(${index})">-></button></td>`;
+        //console.log(item);
+        tdTasks.innerHTML += `<li style="list-style: none;">${item}<button class="btn btn-primary" onclick="moveTaskToProgress(${index})">-></button></li>`;
     })
 }
 
@@ -29,12 +29,13 @@ let moveTaskToProgress = (i) => {
 let moveTasks = () => {
     td2Tasks.innerHTML = '';
     process.forEach(function(item, index) {
-        console.log(item);
-        td2Tasks.innerHTML += `<td>${item}<button class="btn btn-primary" onclick="moveTaskToDone(${index})">-></button></td>`;
+        //console.log(item);
+        td2Tasks.innerHTML += `<li style="list-style: none;">${item}<button class="btn btn-primary" onclick="moveTaskToDone(${index})">-></button></li>`;
     })
 }
 
 moveTasks();
+
 
 let done = [];
 
@@ -50,7 +51,7 @@ let moveTaskToDone = () => {
     td3Tasks.innerHTML = '';
     done.forEach(function(item, index) {
         console.log(item);
-        td3Tasks.innerHTML += `<td>${item}(${index})</td>`;
+        td3Tasks.innerHTML += `<li>${item}(${index})</li>`;
     })
 }
 

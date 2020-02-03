@@ -11,16 +11,57 @@
 </head>
 
 <body>
+    <div class="container-fluid">
+        <div class="border border-dark">
+            <div class="row">
+                <div class="col">
+                    <h2 class="display-4">Tasks</h2>
+                    <div>
+                        <input placeholder="Type in a task" id="inputTask" type="text">
+                        <button class="btn btn-success" onclick="addTask()">+</button>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h4 class="display-4">Tasks in progress</h4>
+                </div>
+                <div class="col">
+                    <h4 class="display-4">Tasks completed</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <ul id="firstList">
+
+                </ul>
+            </div>
+            <div class="col">
+                <ul id="secondList">
+
+                </ul>
+            </div>
+            <div class="col">
+                <ul id="thirdList">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<script src="indexTaskList.js"></script>
+
+</html>
+<!--body>
     <div class="table-responsive">
         <table class="table table-bordered">
             <thead>
                 <tr>
                     <th>
                         Tasks
-                        <div>
-                            <input placeholder="Type in a task" id="inputTask" type="text">
-                            <button class="btn btn-success" onclick="addTask()">+</button>
-                        </div>
+                        
                     </th>
                     <th scope="col">
                         <h4>Tasks in progress</h4>
@@ -28,31 +69,27 @@
                     <th scope="col">
                         <h4>Tasks completed</h4>
                     </th>
-                    <!-- <input placeholder="Type in a task" id="inputTask" type="text">
+                    <input placeholder="Type in a task" id="inputTask" type="text">
             <button class="btn btn-success" onclick="btnAddFunction()">+</button>
 
-            <ul id="mainList"></ul> -->
+            <ul id="mainList"></ul> 
                 </tr>
             </thead>
             <tbody>
                 <tr id="firstList">
 
                 </tr>
-
+            </tbody>
+            <tbody>
                 <tr id="secondList">
 
                 </tr>
-
+            </tbody>
+            <tbody>
                 <tr id="thirdList">
 
                 </tr>
-
             </tbody>
         </table>
     </div>
-
-
-    <script src="indexTaskList.js"></script>
-</body>
-
-</html>
+-->
