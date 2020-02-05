@@ -49,3 +49,10 @@ let moveTaskToDone2 = () => {
         td3Tasks.innerHTML += `<li style="list-style: none;"><button class="btn btn-warning" onclick="moveTaskBackProgress(${index})"><-</button>${item}</li>`;
     })
 }
+
+let moveTaskBackProgress = (i) => {
+    process.push(done[i]);
+    done.splice(i, 1);
+    moveTasks();
+    moveTaskToDone2();
+}
