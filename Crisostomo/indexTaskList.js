@@ -34,18 +34,44 @@ let moveTasks = () => {
     })
 }
 
+moveTasks();
+
 let done = [];
 let moveTaskToDone = (i) => {
     done.push(process[i]);
     process.splice(i, 1);
-    moveTaskToDone2();
+    moveTaskToProgressAgain();
+    moveTasks();
 }
 
 
-let moveTaskToDone2 = () => {
+let moveTaskToProgressAgain = () => {
     td3Tasks.innerHTML = '';
     done.forEach(function(item, index) {
         console.log(item);
         td3Tasks.innerHTML += `<li style="list-style: none;"><button class="btn btn-warning" onclick="moveTaskBackProgress(${index})"><-</button>${item}</li>`;
     })
+}
+
+let moveTaskBackProgress = (i) => {
+    process.push(done[i]);
+    done.splice(i, 1);
+    moveTaskToProgressAgain();
+    moveTasks();
+}
+
+
+let listTasksAgain = () => {
+    td2Tasks.innerHTML = '';
+    tasks.forEach(function(item, index) {
+        //console.log(item);
+        td2Tasks.innerHTML += `<li style="list-style: none;"><button class="btn btn-warning" onclick="moveTaskToMainListAgain(${index})"><-</button>${item}</li>`;
+    })
+}
+
+let moveTaskToMainListAgain = (i) => {
+    tasks.push(process[i]);
+    process.splice(i, 1);
+    listTasksAgain();
+    moveTaskBackProgress();
 }
