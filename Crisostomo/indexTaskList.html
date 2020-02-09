@@ -4,44 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesTaskList.css"></link>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styleTaskList.css"></link>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 
-<body>
+<body class="body">
     <div class="container-fluid">
-        <div class="border border-dark">
-            <div class="row">
-                <div class="col">
-                    <h2 class="display-4">Tasks</h2>
-                    <div>
-                        <input placeholder="Type in a task" id="inputTask" type="text">
-                        <button class="btn btn-success" onclick="addTask()">+</button>
-                    </div>
+        <div class="row row1">
+            <div class="col">
+                <h2 class="display-4">Tasks</h2>
+                <div>
+                    <input placeholder="Type in a task" id="inputTask" type="text">
+                    <button class="btn btn-success" onclick="addTask()">+</button>
                 </div>
+            </div>
 
-                <div class="col">
-                    <h4 class="display-4">Tasks in progress</h4>
-                </div>
-                <div class="col">
-                    <h4 class="display-4">Tasks completed</h4>
-                </div>
+            <div class="col">
+                <h4 class="display-4">Tasks in progress</h4>
+            </div>
+            <div class="col">
+                <h4 class="display-4">Tasks completed</h4>
             </div>
         </div>
+    </div>
+    <div class="container-fluid">
         <div class="row">
-            <div class="col">
-                <ul id="firstList">
+            <div class="col" id="1col">
+                <ul id="firstList" ondrop="drop(event)" ondragover="allowDrop(event)">
 
                 </ul>
             </div>
-            <div class="col">
-                <ul id="secondList">
+            <div class="col" id="2col">
+                <ul id="secondList" ondrop="drop(event)" ondragover="allowDrop(event)">
 
                 </ul>
             </div>
-            <div class="col">
+            <div class="col" id="3col">
                 <ul id="thirdList">
 
                 </ul>
@@ -54,42 +54,3 @@
 <script src="indexTaskList.js"></script>
 
 </html>
-<!--body>
-    <div class="table-responsive">
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>
-                        Tasks
-                        
-                    </th>
-                    <th scope="col">
-                        <h4>Tasks in progress</h4>
-                    </th>
-                    <th scope="col">
-                        <h4>Tasks completed</h4>
-                    </th>
-                    <input placeholder="Type in a task" id="inputTask" type="text">
-            <button class="btn btn-success" onclick="btnAddFunction()">+</button>
-
-            <ul id="mainList"></ul> 
-                </tr>
-            </thead>
-            <tbody>
-                <tr id="firstList">
-
-                </tr>
-            </tbody>
-            <tbody>
-                <tr id="secondList">
-
-                </tr>
-            </tbody>
-            <tbody>
-                <tr id="thirdList">
-
-                </tr>
-            </tbody>
-        </table>
-    </div>
--->

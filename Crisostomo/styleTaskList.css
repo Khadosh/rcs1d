@@ -1,0 +1,10 @@
+.body {
+    background-color: rgb(0, 204, 153);
+}
+
+.body>.container-fluid>.row1 {
+    margin: 0.25cm;
+    padding: 0.25cm;
+    border: lightslategrey 10px;
+    border-radius: 5px;
+}
